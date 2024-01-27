@@ -1,208 +1,300 @@
-.App {
-    display: grid;
-    font-family: 'Poppins', sans-serif;
-    background-image: linear-gradient(to bottom right, orange,yellow);
-    grid-template-areas:
-            'navbar navbar'
-            'product product slide'
-            'buy buy buy'
-            'why why why'
-            'bottom bottom bottom';
-  }
-  .Navbar{
-    grid-area: 'navbar';
-  }
-  .Product{
-    grid-area: 'product';
-  }
-  .Bottom{
-    grid-area: 'bottom';
-  }
-  .Slide{
-    grid-area: 'slide';
-  }
-  .buynow{
-    grid-area: 'buy';
-    text-align: center;
-    margin: 2%;
-  }
-
-/* product */
-.Product{
-    text-align: center;
-}
-
-@media screen and (width<450px){
-    .App{
-        display: grid;
-        grid-template-areas:
-                "navbar"
-                "product"
-                "slide"
-                "why"
-                "buy"
-                "bottom";
-    }
-}
-.Slide img{
-    border-radius: 10px;
-    height: auto;
-    width: 90%;
-    display: block;
-    margin: auto;
-}
-.whyus{
-    grid-area: 'why';
-}
-
-.Product p{
-    margin-right:5%;
-    margin-left: 5%;
-    border-radius: 10px;
-    padding: 5px;
-    background-image: linear-gradient(to bottom left, #7EC04D, green);
-    color: white;
-}
-.whyus{
-    margin:5%;
-    border-radius: 10px;
-    padding: 5px;
-    background-image: linear-gradient(to bottom left, #7EC04D, green);
-    color: white;
-}
-.whyus h2{
-    text-align: center;
-}
-span{
-    font-weight: bold;
-}
-button{
-    background-color: green;
-    border-radius: 5px;
-    width: 100px;
-    height: 50px;
-    color: white;
-}
-
-.text{
-    grid-area: 'text';
-}
-.image{
-    grid-area: 'imge';
-}
-
-/* navbar */
-.Navbar{
-    text-align: center;
-    padding: 2%;
-    background-image: linear-gradient(to bottom right, #7EC04D, green);
-    margin: 2%;
-    border-radius: 10px;
-}
-.Navbar img{
-    border-radius: 50%;
-    padding: 0;
-}
-.Navbar h1{
-    color: white;
-    padding: 0;
+/* Reset default browser styles */
+body, h1, h2, h3, p {
     margin: 0;
-}
-/* bottom*/
-
-.Bottom{
-    background-image: linear-gradient(to bottom left, #7EC04D, green);
-    height: auto;
-    width: 100%;
-    text-align: center;
-    border-radius: 5px;
-    bottom: 0;
+    padding: 0;
 }
 
-.Bottom ol{
+/* Set a background color and font styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f2f2;
+}
+
+hr{
+    margin: 0%;
+    color: white;
+    padding: 0%;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    background-color: #218021;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.container {
     display: flex;
-    list-style: none;
-    padding: 2%;
-}
-.Bottom ol>li{
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
-img{
-    height: auto;
-    width: 20%;
+
+.header-content {
+    display: flex;
+    align-items: center;
 }
 
-p,.whyus{
-    /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-  }
-  
-  /* On mouse-over, add a deeper shadow */
-p:hover,.whyus:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-
-
-
-/* CSS */
-.button-30 {
-  align-items: center;
-  appearance: none;
-  background-color: #FCFCFD;
-  border-radius: 4px;
-  border-width: 0;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
-  box-sizing: border-box;
-  color: green;
-  font-weight: bold;
-  cursor: pointer;
-  display: inline-flex;
-  font-family: "JetBrains Mono",monospace;
-  height: 48px;
-  justify-content: center;
-  line-height: 1;
-  list-style: none;
-  overflow: hidden;
-  padding-left: 16px;
-  padding-right: 16px;
-  position: relative;
-  text-align: left;
-  text-decoration: none;
-  transition: box-shadow .15s,transform .15s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-  will-change: box-shadow,transform;
-  font-size: 18px;
+header h1 {
+    font-size: 36px;
 }
 
-.button-30:focus {
-  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+nav{
+    align-items: center;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-left: 20px;
+    padding: 0%;
 }
 
-.button-30:hover {
-  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-  transform: translateY(-2px);
+nav li {
+    margin: 10px;
 }
 
-.button-30:active {
-  box-shadow: #D6D6E7 0 3px 7px inset;
-  transform: translateY(2px);
-}
-
-h3{
-    color: white;
-    font-family: "JetBrains Mono",monospace;
-    background-color: green;
-    margin-left: auto;
-    margin-right: auto;
-    width: fit-content;
-    text-align: center;
-    border-radius: 4px;
-    padding: 5px;
-    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+nav a {
+    color: #fff;
+    text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* Subtle animations for buttons and links */
+.btn, nav a {
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover{
+    background-color: white;
+    transform: scale(1.05);
+}
+ nav a:hover {
+    background-color: white;
+    color: #13062f;
+ }
+
+/* Logo styles */
+.logo {
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    margin-right: 10px; /* Add margin to create spacing between the logo and the site title */
+}
+
+
+/* Hero section styles */
+#hero {
+    background-image: linear-gradient(#218021,#08350f);
+    background-size:auto;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#hero h2 {
+    font-size: 36px;
+}
+
+#hero p {
+    font-size: 18px;
+    margin: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #b6bdd2;
+    color:#13062f;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: hsl(0, 0%, 0%);
+    color: white;
+    border: 1px solid white;
+}
+
+
+/* Course section styles */
+.ourc{
+    background-color: #218021;
+    color: white;
+}
+
+#courses{
+    background-color: #218021;
+}
+#courses > .container{
+    background-color: #218021;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.course {
+    flex: 2 2 33%;
+    box-sizing: border-box;
+    background-image:linear-gradient(#218021,#08350f);
+    padding: 20px;
+    margin: 10px;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(219, 219, 219, 0.1); /* Add a subtle shadow */
+    transition: box-shadow 0.3s; /* Apply a transition for the shadow */
+
+    /* Hover effect */
+    cursor: pointer;
+}
+
+.course:hover {
+    box-shadow: 0 8px 15px rgba(0, 52, 67, 0.2); /* Elevate the box shadow on hover */
+}
+.courses h2{
+    text-align: center;
+}
+.course h3 {
+    font-size: 24px;
+}
+
+.course p {
+    font-size: 16px;
+}
+
+.motivation {
+    font-style: italic;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Register section styles */
+#register {
+    text-align: center;
+    background-image: linear-gradient(#218021,#08350f);
+    color: white;
+    padding: 60px 0;
+}
+
+#register h2 {
+    font-size: 36px;
+}
+
+#register p {
+    font-size: 18px;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-top: 20px;
+}
+
+/* Contact section styles */
+#contact {
+    background-image: linear-gradient(#218021,#08350f);
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.contact-info {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #fca311;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #303030;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    /* Header adjustments */
+    header {
+        padding: 10px 0;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-content {
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul {
+        margin-top: 20px;
+    }
+
+    /* Hero adjustments */
+    #hero {
+        padding: 60px 0;
+    }
+
+    #hero h2 {
+        font-size: 28px;
+    }
+    
+
+    #courses .course {
+        padding: 10px;
+    }
+
+    #courses h3 {
+        font-size: 24px;
+    }
+
+    #courses p {
+        font-size: 16px;
+    }
+
+    .motivation {
+        font-size: 14px;
+    }
+
+    #register {
+        padding: 40px 0;
+    }
+
+    #register h2 {
+        font-size: 28px;
+    }
+
+    #contact {
+        padding: 40px 0;
+    }
+
+    #contact-info {
+        font-size: 16px;
+    }
+
+    .social-icons a {
+        font-size: 20px;
+    }
 }
