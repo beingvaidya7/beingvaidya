@@ -1,97 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Being Vaidya</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="header-content">
-                <img src="logo-bv.png" alt="Being Vaidya Logo" class="logo">
-                <h1>Being Vaidya</h1>
-                <nav>
-                    <ul>
-                        <li><a href="#courses">Features</a></li>
-                        <li><a href="#register">Download</a></li>
-                        <li><a href="#contact">Contact Us</a></li>
-                    </ul>
-                </nav>
-            </div>
+        <div class="container header-content">
+            <img src="logo-bv.png" alt="Being Vaidya Logo" class="logo">
+            <h1>Being Vaidya</h1>
+            <span class="menu-toggle">&#9776;</span>
+            <nav id="mobile-menu">
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <hr>
+
     <section id="hero">
-        <div >
-            <h2>Welcome to Being Vaidya....</h2>
-            <p>BeingVaidya is an innovative startup in Ayurvedic healthcare, providing an online platform for collaboration and professional growth. We offer ed-tech tools and consultancy services tailored for Ayurvedic practitioners. With a user-friendly platform, we aim to revolutionize Ayurveda in the digital age.
-            </p>
-            <a href="#register" class="btn">Download Our App Now</a>
+        <h2>Build Website for Your Hospital</h2>
+        <p>Create a stunning online presence for your healthcare services with our expertise.</p>
+        <p>Example: www.yourhospital.com</p>
+        <a href="#features" class="btn">Get Started</a>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <h2>Our Application Features</h2>
+            <div class="feature-item">
+                <div class="feature-icon">🔍</div>
+                <h3>Job Updates</h3>
+                <p>Stay updated with the latest Ayurvedic job openings across India.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">📝</div>
+                <h3>Prescription & Bill Generator</h3>
+                <p>Easily create prescriptions, bills, and diet plans with our tools.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🌿</div>
+                <h3>Dravya Database</h3>
+                <p>Access a comprehensive database of Ayurvedic herbs and plants.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">💬</div>
+                <h3>Vaidya Connect</h3>
+                <p>Connect with other Ayurvedic professionals across India.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🩺</div>
+                <h3>E-Chikitsa</h3>
+                <p>Explore shared experiences and treatments from top doctors.</p>
+            </div>
         </div>
     </section>
 
-    <section id="courses">
-            <h2 class="ourc">Our Features</h2>
-            <div class="container">
-            <div class="course">
-                <h3>Ayurveda Dictionary</h3>
-                <p> In our app, the Ayurveda Dictionary is your comprehensive guide, offering definitions, explanations, and insights into Ayurvedic terminology, herbs, practices, and health principles.</p>
-            </div>
-            <div class="course">
-                <h3>Search Vaidya</h3>
-                <p>"Search Vaidya" expands your Ayurvedic network by enabling you to find nearby practitioners using their pincode, fostering connections and collaborations within the Ayurveda community.</p>
-            </div>
-            <div class="course">
-                <h3>Ayurveda Resources</h3>
-                <p>"Ayurveda Resources" is your one-stop hub for comprehensive information on courses, stipend details from various colleges, and online resources in the field of Ayurveda. Access valuable insights to enhance your knowledge and career opportunities in traditional medicine.</p>
-            </div>
-            <div class="course">
-                <h3>Store</h3>
-                <p>"Store" is your destination for customized Ayurveda equipment and raw drugs. Discover high-quality products tailored to your needs, ensuring authenticity and effectiveness in your Ayurvedic practice.</p>
-            </div>
-            <div class="course">
-                <h3>E-Courses</h3>
-                <p>"E-Courses" offers a diverse range of online learning opportunities in Ayurveda. Explore our curated selection of courses, designed to deepen your understanding and skills in traditional medicine from the comfort of your own home.</p>
-            </div>
-            <div class="course">
-                <h3>E-Books</h3>
-                <p>"E-Books" provides a virtual library of invaluable resources in Ayurveda. Access a wide array of electronic books covering topics ranging from herbal remedies to holistic wellness, empowering you with knowledge to support your journey towards optimal health and vitality.</p>
+    <section id="testimonials">
+        <div class="container">
+            <h2>Testimonials</h2>
+            <div class="testimonial-item">
+                <h3>AyurAndro</h3>
+                <p>"Being Vaidya has transformed the way we approach digital Ayurveda."</p>
+                <a href="https://www.ayurandro.com" target="_blank" class="btn">Visit AyurAndro</a>
             </div>
         </div>
     </section>
 
-    <section id="register">
-        <div>
-            <h2>Download Now</h2>
-            <p>Unlock the power of Ayurveda with Vaidya! Join our community of Ayurvedic practitioners for access to cutting-edge ed-tech tools and personalized consultancy services. Download now to revolutionize your practice!</p>
-
-            <a href="https://play.google.com/store/apps/details?id=com.beingvaidya.beingvaidya&pcampaignid=web_share" class="btn">Download Our App Now</a>
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Being Vaidya is a pioneering online platform that bridges traditional Ayurveda with modern technology. We empower Ayurvedic doctors, students, and enthusiasts across India through live webinars, recorded sessions, and curated courses. Our vision is to become a global hub for Ayurveda, fostering community engagement and sustainable healthcare solutions.</p>
         </div>
     </section>
 
     <section id="contact">
-        <div>
+        <div class="container">
             <h2>Contact Us</h2>
-            <p>If you have any questions or need assistance, feel free to reach out to us.</p>
-            <div class="contact-info">
-                <p>Email: helpdesk.beingvaidya@gmail.com</p>
-            </div>
+            <p class="contact-info">Email: support.beingvaidya@gmail.com</p>
+            <p class="contact-info">Phone: +91 7013246776</p>
             <div class="social-icons">
-                <a href="https://www.instagram.com/being_vaidya/?hl=en"  target="_blank" class="icon-instagram">Instagram</a>
-                <a href="https://www.linkedin.com/company/being-vaidya" target="_blank" class="icon-linkedin">LinkedIn</a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </section>
 
     <footer>
-        <div>
-            <p>&copy; 2024 Hayagriva Vedataru</p>
-        </div>
+        <p>&copy; 2024 Being Vaidya. All rights reserved.</p>
     </footer>
+
+    <!-- FontAwesome for social icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const overlay = document.getElementById('overlay');
+
+        function toggleMenu() {
+            mobileMenu.classList.toggle('active');
+            overlay.classList.toggle('active');
+        }
+
+        menuToggle.addEventListener('click', toggleMenu);
+        overlay.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+            overlay.classList.remove('active');
+        });
+    </script>
 </body>
 </html>

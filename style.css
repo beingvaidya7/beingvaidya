@@ -1,5 +1,5 @@
 /* Reset default browser styles */
-body, h1, h2, h3, p {
+body, h1, h2, h3, p, ul {
     margin: 0;
     padding: 0;
 }
@@ -8,13 +8,10 @@ body, h1, h2, h3, p {
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f2f2f2;
+    color: #333;
 }
 
-hr{
-    margin: 0%;
-    color: white;
-    padding: 0%;
-}
+/* Container */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -23,194 +20,212 @@ hr{
 
 /* Header styles */
 header {
-    background-color: #218021;
+    background-color: #1f7a1f;
     color: #fff;
-    padding: 20px 0;
+    padding: 10px 0; /* Reduced height */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.container {
+.header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header-content {
+header h1 {
+    font-size: 24px; /* Adjusted for better fit */
+    margin: 0;
+}
+
+nav {
     display: flex;
     align-items: center;
 }
 
-header h1 {
-    font-size: 36px;
-}
-
-nav{
-    align-items: center;
-}
 nav ul {
     list-style: none;
     display: flex;
-    margin-left: 20px;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
 }
 
 nav li {
-    margin: 10px;
+    margin-left: 20px;
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s;
+    transition: color 0.3s, transform 0.3s;
 }
 
 nav a:hover {
-    color: white;
+    color: #fca311;
+    transform: scale(1.1);
 }
-
-/* Subtle animations for buttons and links */
-.btn, nav a {
-    transition: background-color 0.3s, transform 0.2s;
-}
-
-.btn:hover{
-    background-color: white;
-    transform: scale(1.05);
-}
- nav a:hover {
-    background-color: white;
-    color: #13062f;
- }
 
 /* Logo styles */
 .logo {
-    width: 100px; /* Adjust the width as needed */
-    height: 100px; /* Adjust the height as needed */
-    margin-right: 10px; /* Add margin to create spacing between the logo and the site title */
+    width: 60px; /* Adjusted size */
+    height: auto;
+    margin-right: 10px;
 }
 
-
-/* Hero section styles */
-#hero {
-    background-image: linear-gradient(#218021,#08350f);
-    background-size:auto;
-    background-position: center;
-    color: #fff;
-    text-align: center;
-    padding: 50px 0;
-}
-
-#hero h2 {
-    font-size: 36px;
-}
-
-#hero p {
-    font-size: 18px;
-    margin: 20px;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-.btn {
-    display: inline-block;
-    background-color: #b6bdd2;
-    color:#13062f;
-    padding: 10px 20px;
-    text-decoration: none;
-    margin: 10px;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-.btn:hover {
-    background-color: hsl(0, 0%, 0%);
-    color: white;
-    border: 1px solid white;
-}
-
-
-/* Course section styles */
-.ourc{
-    background-color: #218021;
-    color: white;
-}
-
-#courses{
-    background-color: #218021;
-}
-#courses > .container{
-    background-color: #218021;
-    color: white;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.course {
-    flex: 2 2 33%;
-    box-sizing: border-box;
-    background-image:linear-gradient(#218021,#08350f);
-    padding: 20px;
-    margin: 10px;
-    color: white;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(219, 219, 219, 0.1); /* Add a subtle shadow */
-    transition: box-shadow 0.3s; /* Apply a transition for the shadow */
-
-    /* Hover effect */
+/* Menu toggle icon */
+.menu-toggle {
+    display: none;
+    font-size: 30px;
     cursor: pointer;
 }
 
-.course:hover {
-    box-shadow: 0 8px 15px rgba(0, 52, 67, 0.2); /* Elevate the box shadow on hover */
+/* Hero section styles */
+#hero {
+    background: linear-gradient(45deg, #1f7a1f, #08350f);
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px; /* Reduced padding */
+    border-radius: 0 0 50% 50% / 10%;
+    position: relative;
 }
-.courses h2{
+
+#hero h2 {
+    font-size: 36px; /* Adjusted font size */
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 16px; /* Adjusted font size */
+    margin-bottom: 30px;
+}
+
+#hero .btn {
+    display: inline-block;
+    background-color: #fca311;
+    color: #1f7a1f;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#hero .btn:hover {
+    background-color: #fff;
+    transform: translateY(-5px);
+}
+
+/* Our Application Features section styles */
+#features {
+    background-color: #fff;
+    padding: 60px 20px;
     text-align: center;
 }
-.course h3 {
-    font-size: 24px;
-}
 
-.course p {
-    font-size: 16px;
-}
-
-.motivation {
-    font-style: italic;
-    font-size: 16px;
-    margin-top: 10px;
-}
-
-/* Register section styles */
-#register {
-    text-align: center;
-    background-image: linear-gradient(#218021,#08350f);
-    color: white;
-    padding: 60px 0;
-}
-
-#register h2 {
+#features h2 {
     font-size: 36px;
+    margin-bottom: 40px;
+    color: #1f7a1f;
+    text-transform: uppercase;
 }
 
-#register p {
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+    background: linear-gradient(135deg, #218021, #08350f);
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.feature-item:hover {
+    transform: scale(1.05);
+}
+
+.feature-icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #fca311;
+}
+
+.feature-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 16px;
+}
+
+/* Testimonials section styles */
+#testimonials {
+    background: linear-gradient(135deg, #218021, #08350f);
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 50% 50% 0 0 / 10%;
+}
+
+#testimonials h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.testimonial-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.testimonial-item p {
+    font-size: 16px;
+}
+
+/* About us section styles */
+#about {
+    background-color: #f7f7f7;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #1f7a1f;
+}
+
+#about p {
     font-size: 18px;
-    padding-left: 15%;
-    padding-right: 15%;
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* Contact section styles */
 #contact {
-    background-image: linear-gradient(#218021,#08350f);
+    background: linear-gradient(135deg, #218021, #08350f);
     color: #fff;
-    padding: 60px 0;
+    padding: 60px 20px;
     text-align: center;
+}
+
+#contact h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
 }
 
 .contact-info {
     font-size: 18px;
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .social-icons a {
@@ -230,71 +245,49 @@ footer {
 
 /* Responsive design */
 @media (max-width: 768px) {
-    /* Header adjustments */
-    header {
-        padding: 10px 0;
-    }
-
-    .container {
-        flex-direction: column;
-        text-align: center;
-    }
-
     .header-content {
         flex-direction: column;
-    }
-
-    header h1 {
-        font-size: 24px;
-    }
-
-    nav ul {
-        margin-top: 20px;
-    }
-
-    /* Hero adjustments */
-    #hero {
-        padding: 60px 0;
-    }
-
-    #hero h2 {
-        font-size: 28px;
+        align-items: flex-start;
     }
     
-
-    #courses .course {
-        padding: 10px;
-    }
-
-    #courses h3 {
-        font-size: 24px;
-    }
-
-    #courses p {
-        font-size: 16px;
-    }
-
-    .motivation {
-        font-size: 14px;
-    }
-
-    #register {
-        padding: 40px 0;
-    }
-
-    #register h2 {
-        font-size: 28px;
-    }
-
-    #contact {
-        padding: 40px 0;
-    }
-
-    #contact-info {
-        font-size: 16px;
-    }
-
-    .social-icons a {
+    header h1 {
         font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    nav {
+        display: none;
+        width: 100%;
+    }
+
+    nav.active {
+        display: block;
+        position: absolute;
+        top: 60px; /* Adjusted based on header height */
+        left: 0;
+        background-color: #1f7a1f;
+        padding: 10px 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    nav ul {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    
+    nav li {
+        margin: 10px 0;
+    }
+    
+    nav a {
+        display: block;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+    }
+    
+    .menu-toggle {
+        display: block;
     }
 }
