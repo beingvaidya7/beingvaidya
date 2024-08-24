@@ -5,15 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Being Vaidya</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+   
 </head>
 <body>
     <header>
         <div class="container header-content">
-            <img src="logo-bv.png" alt="Being Vaidya Logo" class="logo">
-            <h1>Being Vaidya</h1>
+            <div class="branding">
+                <img src="logo-bv.png" alt="Being Vaidya Logo" class="logo">
+                <h1>Being Vaidya</h1>
+            </div>
             <span class="menu-toggle">&#9776;</span>
             <nav id="mobile-menu">
                 <ul>
@@ -25,14 +30,26 @@
             </nav>
         </div>
     </header>
+    
 
     <section id="hero">
         <h2>Build Website for Your Hospital</h2>
         <p>Create a stunning online presence for your healthcare services with our expertise.</p>
         <p>Example: www.yourhospital.com</p>
-        <a href="#features" class="btn">Get Started</a>
+        <a href="https://wa.me/917013246776?text=Hello%20Being%20Vaidya%2C%20I%27m%20interested%20in%20building%20a%20website%20for%20my%20hospital.%20Please%20guide%20me%20through%20the%20process." class="btn" target="_blank">Get Started</a>
+
     </section>
 
+
+    <section id="download">
+        <div class="container">
+            <h2>Download Our Application</h2>
+            <p>Experience our services on the go. Download our app now!</p>
+            <a href="https://play.google.com/store/apps/details?id=com.beingvaidya.beingvaidya&pcampaignid=web_share" target="_blank">
+                <img src="playstore.png" alt="Download on Play Store" class="playstore-image">
+            </a>
+        </div>
+    </section>
     <section id="features">
         <div class="container">
             <h2>Our Application Features</h2>
@@ -88,10 +105,11 @@
             <p class="contact-info">Email: support.beingvaidya@gmail.com</p>
             <p class="contact-info">Phone: +91 7013246776</p>
             <div class="social-icons">
+                <a href="https://www.instagram.com/being_vaidya?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/BeingVaidya"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/company/being-vaidya"><i class="fab fa-linkedin"></i></a> 
+                <a href="https://youtube.com/@beingvaidya1234"><i class="fab fa-youtube"></i></a>
                 <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </section>
@@ -99,24 +117,6 @@
     <footer>
         <p>&copy; 2024 Being Vaidya. All rights reserved.</p>
     </footer>
-
-    <!-- FontAwesome for social icons -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <script>
-        const menuToggle = document.querySelector('.menu-toggle');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const overlay = document.getElementById('overlay');
-
-        function toggleMenu() {
-            mobileMenu.classList.toggle('active');
-            overlay.classList.toggle('active');
-        }
-
-        menuToggle.addEventListener('click', toggleMenu);
-        overlay.addEventListener('click', () => {
-            mobileMenu.classList.remove('active');
-            overlay.classList.remove('active');
-        });
-    </script>
 </body>
+<script src="script.js"></script>
 </html>
