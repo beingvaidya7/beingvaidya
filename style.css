@@ -333,6 +333,7 @@ footer {
 
 .playstore-image {
     width: 200px;
+    margin: 10px;
     transition: transform 0.3s;
 }
 
