@@ -1,0 +1,571 @@
+/* Reset */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #1f7a1f;
+    color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    color: #fca311;
+    transform: scale(1.1);
+}
+
+/* ========================
+   HERO SECTION
+   ======================== */
+.yukti-hero {
+    background: linear-gradient(135deg, #1f7a1f 0%, #08350f 50%, #1f7a1f 100%);
+    background-size: 200% 200%;
+    animation: gradientShift 8s ease infinite;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px 80px;
+    position: relative;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.yukti-hero .badge {
+    display: inline-block;
+    background-color: #fca311;
+    color: #08350f;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    letter-spacing: 0.5px;
+}
+
+.yukti-hero h2 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    line-height: 1.2;
+}
+
+.yukti-hero h2 span {
+    color: #fca311;
+}
+
+.yukti-hero .subtitle {
+    font-size: 20px;
+    opacity: 0.9;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #fca311;
+    color: #08350f;
+    padding: 14px 36px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(252, 163, 17, 0.4);
+}
+
+.btn-primary:hover {
+    background-color: #fff;
+    color: #1f7a1f;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+}
+
+.btn-primary i {
+    font-size: 22px;
+}
+
+.btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    padding: 14px 36px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 18px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    cursor: default;
+    opacity: 0.7;
+}
+
+.btn-secondary i {
+    font-size: 22px;
+}
+
+/* ========================
+   FEATURES SECTION
+   ======================== */
+.yukti-features {
+    background-color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.yukti-features h2 {
+    font-size: 36px;
+    color: #1f7a1f;
+    margin-bottom: 16px;
+}
+
+.yukti-features .section-subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 50px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background: linear-gradient(135deg, #218021, #08350f);
+    color: #fff;
+    border-radius: 16px;
+    padding: 32px 24px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card .icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.feature-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 15px;
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+/* ========================
+   SCREENSHOTS SECTION
+   ======================== */
+.yukti-screenshots {
+    background: linear-gradient(135deg, #1f7a1f, #08350f);
+    padding: 80px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.yukti-screenshots h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.screenshots-scroll {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    padding: 20px 0;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.screenshots-scroll::-webkit-scrollbar {
+    height: 8px;
+}
+
+.screenshots-scroll::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.screenshots-scroll::-webkit-scrollbar-thumb {
+    background: #fca311;
+    border-radius: 4px;
+}
+
+.screenshot-item {
+    flex: 0 0 auto;
+    width: 250px;
+    scroll-snap-align: center;
+}
+
+.screenshot-item img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.screenshot-item img:hover {
+    transform: scale(1.05);
+}
+
+.screenshot-placeholder {
+    width: 100%;
+    height: 440px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    border: 2px dashed rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+}
+
+/* ========================
+   HOW IT WORKS
+   ======================== */
+.yukti-steps {
+    background-color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.yukti-steps h2 {
+    font-size: 36px;
+    color: #1f7a1f;
+    margin-bottom: 50px;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.step {
+    flex: 1;
+    min-width: 220px;
+    max-width: 280px;
+    text-align: center;
+}
+
+.step-number {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #1f7a1f, #08350f);
+    color: #fca311;
+    font-size: 28px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    box-shadow: 0 4px 15px rgba(31, 122, 31, 0.3);
+}
+
+.step h3 {
+    font-size: 22px;
+    color: #1f7a1f;
+    margin-bottom: 10px;
+}
+
+.step p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* ========================
+   FINAL CTA SECTION
+   ======================== */
+.yukti-cta {
+    background: linear-gradient(135deg, #08350f, #1f7a1f);
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.yukti-cta h2 {
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+.yukti-cta h2 span {
+    color: #fca311;
+}
+
+.yukti-cta p {
+    font-size: 18px;
+    opacity: 0.9;
+    margin-bottom: 40px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.store-badge {
+    transition: transform 0.3s;
+}
+
+.store-badge img {
+    width: 200px;
+}
+
+.store-badge:hover {
+    transform: scale(1.1);
+}
+
+.store-badge-disabled {
+    opacity: 0.5;
+    cursor: default;
+    position: relative;
+}
+
+.coming-soon-label {
+    display: block;
+    font-size: 12px;
+    margin-top: 6px;
+    opacity: 0.7;
+}
+
+/* ========================
+   FOOTER
+   ======================== */
+footer {
+    background-color: #303030;
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer a {
+    color: #fca311;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+}
+
+.social-icons {
+    margin-top: 16px;
+}
+
+.social-icons a {
+    color: #fca311;
+    font-size: 22px;
+    margin: 0 12px;
+    transition: color 0.3s, transform 0.3s;
+    display: inline-block;
+}
+
+.social-icons a:hover {
+    color: #fff;
+    transform: scale(1.2);
+}
+
+/* ========================
+   RESPONSIVE
+   ======================== */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #1f7a1f;
+        width: 100%;
+        text-align: right;
+        z-index: 1000;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    .header-content {
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    .yukti-hero {
+        padding: 70px 16px 60px;
+    }
+
+    .yukti-hero h2 {
+        font-size: 32px;
+    }
+
+    .yukti-hero .subtitle {
+        font-size: 16px;
+    }
+
+    .btn-primary, .btn-secondary {
+        padding: 12px 28px;
+        font-size: 16px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .feature-card {
+        padding: 24px 20px;
+    }
+
+    .steps-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .yukti-cta h2 {
+        font-size: 28px;
+    }
+
+    .store-badge img {
+        width: 160px;
+    }
+}
+
+@media (min-width: 769px) {
+    nav {
+        display: flex;
+    }
+}
